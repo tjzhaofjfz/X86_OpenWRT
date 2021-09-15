@@ -11,9 +11,9 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.10.253/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.10.253/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 ZZZ="package/lean/default-settings/files/zzz-default-settings"
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ
-sed -i 's/OpenWrt /tj.zhao@2021.09.15 compiled in $(TZ=UTC-8 date +%Y.%m.%d) @ OpenWrt /g' $ZZZ
+sed -i 's/OpenWrt /tj.zhao in $(TZ=UTC-8 date +%Y.%m.%d) @ OpenWrt /g' $ZZZ
